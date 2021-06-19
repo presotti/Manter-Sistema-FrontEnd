@@ -1,5 +1,5 @@
 <div>
-  <form-filter></form-filter>
+  <form-filter-insert [titulo]="'Filtro Consulta'"></form-filter-insert>
 </div>
 <div>
   <form-result></form-result>
@@ -8,4 +8,11 @@
   <buttons [name]="pesquisar" [color]="'primary'"></buttons>
   <buttons [name]="limpar" [color]="'secondary'"></buttons>
   <buttons [name]="novo" [color]="'danger'"></buttons>
+</div>
+
+<!--template-->
+<form-filter-insert [titulo]="'Dados da Consulta'"></form-filter-insert>
+<div class="text-right">
+  <buttons [name]="'Voltar'" [color]="'primary'"></buttons>
+  <buttons [name]="'Salvar'" [color]="'success'"></buttons>
 </div>

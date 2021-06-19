@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {SearchComponent} from "./search/search.component";
-import {FilterComponent} from "../shared/form/filter/filter.component";
+import {FilterComponent} from "./form/filter/filter.component";
 import {ButtonComponent} from "../shared/button/button.component";
-import {ResultComponent} from "../shared/form/result/result.component";
-
+import {ResultComponent} from "./form/result/result.component";
+import { ControlSystemComponent } from './form/control-system/control-system.component';
+import { UpdateComponent } from './update/update.component';
 
 
 @NgModule({
@@ -12,13 +13,15 @@ import {ResultComponent} from "../shared/form/result/result.component";
     SearchComponent,
     FilterComponent,
     ButtonComponent,
-    ResultComponent
+    ResultComponent,
+    ControlSystemComponent,
+    UpdateComponent
   ],
   exports: [
     SearchComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class SystemModule { }

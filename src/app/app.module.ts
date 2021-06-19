@@ -14,9 +14,12 @@ import {SystemModule} from "./system/system.module";
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    SystemModule
+    SystemModule,
   ],
   providers: [],
+  exports: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
