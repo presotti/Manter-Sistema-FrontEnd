@@ -4,7 +4,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {SystemModule} from "./system/system.module";
+import {HomeModule} from "./home/home/home.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {SystemModule} from "./system/system.module";
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    SystemModule,
+    HomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   exports: [

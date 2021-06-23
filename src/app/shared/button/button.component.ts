@@ -1,5 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {stringify} from "@angular/compiler/src/util";
+import {Component, EventEmitter, Input, OnInit, Output, TemplateRef} from '@angular/core';
 
 @Component({
   selector: 'buttons',
@@ -10,12 +9,18 @@ export class ButtonComponent implements OnInit {
 
   @Input() name='';
   @Input() color='';
+  @Output() inserir = new EventEmitter<any>();
 
   icon = '';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  abrirModal(systemTemplate: TemplateRef<any>){
+    console.log('button');
+    this.inserir.emit(systemTemplate);
   }
 
 }
