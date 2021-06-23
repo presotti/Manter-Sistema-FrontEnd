@@ -1,0 +1,23 @@
+body{
+  height: 100%;
+  width: 100%;
+}
+.template {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.1fr 2.4fr 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "leftHeader centerHeader rightHeader"
+    "leftMain centerMain rightMain"
+    "leftFooter centerFooter rightFooter";
+}
+.leftHeader { grid-area: leftHeader; }
+.centerHeader { grid-area: centerHeader; }
+.rightHeader { grid-area: rightHeader; }
+.leftMain { grid-area: leftMain; }
+.centerMain { grid-area: centerMain; }
+.rightMain { grid-area: rightMain; }
+.leftFooter { grid-area: leftFooter; }
+.centerFooter { grid-area: centerFooter; }
+.rightFooter { grid-area: rightFooter; }
